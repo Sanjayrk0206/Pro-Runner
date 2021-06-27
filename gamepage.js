@@ -31,7 +31,8 @@ function run(){
     const pobj = document.getElementById("play");
     gam=0;
     var gameinterval = setInterval(() => {
-        time=Math.floor((Math.random() * 5) + 1);
+        time=Math.floor((Math.random() * 10) + 1);
+        score++;
         if (time%2==0 && fhole.classList != "fhole" && chole.classList != "fhole"){
             fhole.style.display="block";
             fhole.classList.add("fhole");
@@ -55,9 +56,6 @@ function run(){
             },3000)
         }
     }, GItime);
-    setInterval(() => {
-        score++;
-    }, 1000);
     var checkinterval = setInterval(() => {
         let cubeposition = parseInt(window.getComputedStyle(pobj).getPropertyValue("top"))
         let fholeposition = parseInt(window.getComputedStyle(fhole).getPropertyValue("margin-left"))
