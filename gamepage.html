@@ -1,0 +1,43 @@
+<html>
+    <head>
+        <title>Pro Runner</title>
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Fugaz+One&family=Bangers&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="gamepage.css">
+        <script src="gamepage.js"></script>
+        <audio id="clickaudio">
+            <source src="mixkit-arcade-game-jump-coin-216.mp3" type="audio/mpeg">
+        </audio>
+    </head>
+    <body>
+        <section id="notice">
+            <div class="notice1">
+                <label class="title1">PRO RUNNER</label><br>
+                <label id="playbutton" onclick="game()"><span class="playbutton1">P</span>lay</label>
+            </div>
+        </section>
+        <section id="board">
+            <label class="title1" id="title3" style="margin-top: 5%;">GAME OVER</label>
+            <form id="notice_background">
+                <label class="notice_text">Better luck next Time</label><br>
+                <label class="score">Score: <span id="score1" style="background-color: transparent;"></span></label><br>
+                <input type="text" id="playername" name="Playername" placeholder="Enter Your Name" value="" autocomplete="off" required><br>
+                <button class="reset1" onclick="storage(document.getElementById('playername').value)">Save & Retry</button>
+            </form>
+        </section>
+        <label class="title1" id="title1" style="font-size: 80px;">PRO RUNNER</label>
+        <label class="title4">Highest Score<br><label class="title1" id="highest" style="font-size: 40px;margin-right: 5%;float: right;margin-top: 0%;"></label></label><br>
+        <label class="title2" id="title2" onclick="run()">START</label>
+        <section class="gamearea" onclick="jump()">
+            <div class="ceiling">
+                <div id="chole"></div>
+            </div>
+            <div id="middle">
+                <div id="play"></div>
+            </div>
+            <div id="floor">
+                <div id="fhole"></div>
+            </div>
+        </section>
+    </body>
+</html>

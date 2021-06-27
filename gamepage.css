@@ -1,0 +1,269 @@
+*{
+    margin: 0%;
+}
+body{
+    background-image: url('https://www.pixelstalk.net/wp-content/uploads/images1/Light-Earth-Space-Dark-Backgrounds.jpg');
+    background-size: cover;
+}
+#notice{
+    display: flex;
+    position: absolute;
+    z-index: 6;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    background-image: url('https://cdn.hipwallpaper.com/i/12/65/iXnBSb.jpg');
+    background-size: cover;
+}
+#board{
+    display: none;
+    position: absolute;
+    z-index: 6;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    background-color: rgba(0,0,0,0.8);
+}
+#notice_background{
+    position: absolute;
+    z-index: 8;
+    width: 30%;
+    height: 175px;
+    background-image: url('bg-1.jpg');
+    background-size: cover;
+    border: 2px solid white;
+    margin-top: 17.5%;
+    padding-top: 2%;
+    text-align: center;
+    border-radius: 5px;
+}
+.notice_text{
+    font-size: 25px;
+    color: aliceblue;
+    background-color: transparent;
+}
+.score{
+    font-size: 35px;
+    color: aliceblue;
+    background-color: transparent;
+}
+input[type="text"]{
+    background-color: white;
+    width: 50%;
+    height: 20%;
+    padding-left: 2%;
+    font-size: 15px;
+    margin-top: 2%;
+}
+button[class="reset1"]{
+    margin-left: 0px;
+    background-color: whitesmoke;
+    margin-top: 3%;
+    font-size: 20px;
+    width: 30%;
+    height: 20%;
+    font-family: 'Bangers', cursive;
+}
+.notice1{
+    margin-top: 10%;
+    text-align: center;
+    font-family: 'Fugaz One', cursive;
+}
+.title1{
+    font-family: 'Fugaz One', cursive;
+    font-size: 100px;
+    animation: title1an 10s ease-in-out infinite forwards;
+}
+.title4{
+    font-family: 'Fugaz One', cursive;
+    font-size: 40px;
+    margin-right: 5%;
+    float: right;
+    margin-top: 0%;
+    color: white;
+}
+@keyframes title1an {
+    0%{
+        color: red;
+        text-shadow: 0 0 5px red;
+    }
+    10%{
+        color: orange;
+        text-shadow: 0 0 5px orange;
+    }
+    20%{
+        color: yellow;
+        text-shadow: 0 0 5px yellow;
+    }
+    30%{
+        color: blue;
+        text-shadow: 0 0 5px blue;
+    }
+    40%{
+        color: violet;
+        text-shadow: 0 0 5px violet;
+    }
+    60%{
+        color: blue;
+        text-shadow: 0 0 5px blue;
+    }
+    70%{
+        color: yellow;
+        text-shadow: 0 0 5px yellow;
+    }
+    80%{
+        color: orange;
+        text-shadow: 0 0 5px orange;
+    }
+    100%{
+        color: red;
+        text-shadow: 0 0 5px red;
+    }    
+}
+.title2{
+    font-family: 'Fugaz One', cursive;
+    font-size: 80px;
+    animation: title2an 10s ease-in-out infinite forwards;
+    position: absolute;
+    z-index: 3;
+    margin-left: 40%;
+    margin-top: 11.5%;
+}
+.title2:hover{
+    margin-left: 35%;
+    margin-top: 9.5%;
+    font-size: 120px;
+}
+@keyframes title2an {
+    0%{
+        color: violet;
+        text-shadow: 0 0 5px violet;
+    }
+    25%{
+        color: red;
+        text-shadow: 0 0 5px red;
+    }
+    50%{
+        color: yellow;
+        text-shadow: 0 0 5px yellow; 
+    }
+    75%{
+        color: red;
+        text-shadow: 0 0 5px red;
+    }
+    100%{
+        color: violet;
+        text-shadow: 0 0 5px violet;
+    }    
+}
+#playbutton{
+    position: relative;
+    top: 20%;
+    font-family: 'Fugaz One', cursive;
+    background-color: transparent;
+    font-size: 40px;
+    color: white;
+}
+#playbutton:hover{
+    font-size: 50px;
+    text-shadow: 0 0 5px white;
+   
+}
+.playbutton1{
+    animation: title1an 10s ease-in-out infinite forwards;
+}
+.gamearea{
+    position: absolute;
+    width: 100%;
+    height: 70%;
+}
+.playbutton{
+    width: 30%;
+    height: 1%;
+}
+.ceiling{
+    background-color: goldenrod;
+    width: 100%;
+    height: 30%;
+}
+#chole{
+    display: none;
+    height: 100%;
+}
+#middle{
+    width: 100%;
+    height: 40%;
+    background-color: transparent;
+}
+#play{
+    background-color: maroon;
+    width: 40px;
+    height: 40px;
+    border: 10px solid skyblue;
+    position: relative;
+    left: 10%;
+    top:65.5%;
+}
+.jumpup{
+    animation: jumpup 0.2s ease-in-out forwards;
+}
+.jumpdown{
+    animation: jumpdown 0.2s ease-in-out forwards;
+}
+@keyframes jumpup {
+    0%{
+        top: 65.5%;
+    }
+    50%{
+        top: 32.75%;
+    }
+    100%{
+        top: 0%;
+    }
+}
+@keyframes jumpdown {
+    0% {
+        top: 0%;
+    }
+    50%{
+        top: 32.75%;
+    }
+    100%{
+        top: 65.5%;
+    }
+}
+#floor{
+    background-color: goldenrod;
+    width: 100%;
+    height: 30%;
+}
+#fhole{
+    display: none;
+    height: 100%;
+    margin-left: 50%;
+}
+.fhole{
+    background-color: rgb(50, 50,50);
+    animation: fholeleft 3s linear 1 forwards;
+}
+@keyframes fholeleft {
+    0%{
+        margin-left: 100%;
+        width: 0%;
+    }
+    10%{
+        margin-left: 90%;
+        width: 10%;
+    }
+    50%{
+        margin-left: 45%;
+    }
+    90%{
+        margin-left: 0%;
+        width: 10%;
+    }
+    100%{
+        margin-left: 0%;
+        width: 0%;
+    }
+}
